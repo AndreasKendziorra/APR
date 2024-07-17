@@ -35,7 +35,6 @@ def calculateExpectedAPRCurrentPosition(totalAmountStaked, totalWeight, dailyRew
 
 # Estimated total rewards, for existing non-paused position. 
 def calculateExpectedTotalRewards(totalAmountStaked, totalWeight, dailyRewards, amountStaked, remainingLockingDuration, offset):
-    dailyRewards = min(totalAmountStaked/365, dailyRewards) 
     expectedTotalReward = 0
     for i in range(lockingDuration):
         remainingDaysToConsider = lockingDuration - i
