@@ -60,7 +60,7 @@ def calculateExpectedTotalRewardsNewPosition(totalAmountStaked, totalWeight, dai
     return expectedTotalReward
 
 
-# This function calculated the current expected average APR for paused positions
+# This function calculates the current expected average APR for paused positions
 # Should be shown after multiplied by 100%
 def calculateExpectedAverageAPRForPaused(totalAmountStaked, dailyRewards):
     # apply capping if necessary
